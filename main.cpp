@@ -72,7 +72,7 @@ int main()
 {
     srand(time(0));
 
-    sf::RenderWindow window(sf::VideoMode(800, 1000), "TETRIS!");
+    sf::RenderWindow window(sf::VideoMode(600, 600), "TETRIS!");
 
     sf::Texture t1, t2, t3;
     std::vector<char> buffer1, buffer2, buffer3;
