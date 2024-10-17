@@ -76,19 +76,19 @@ int main()
 
     sf::Texture t1, t2, t3;
     std::vector<char> buffer1, buffer2, buffer3;
-    if (!loadFromFileToMemory("D:/Projects/TETRIS/Debug/images/tiles.png", buffer1) ||
+    if (!loadFromFileToMemory("../images/tiles.png", buffer1) ||
         !t1.loadFromMemory(buffer1.data(), buffer1.size()))
     {
         std::cerr << "Error loading tiles.png" << std::endl;
         return -1;
     }
-    if (!loadFromFileToMemory("D:/Projects/TETRIS/Debug/images/background.jpeg", buffer2) ||
+    if (!loadFromFileToMemory("../images/background.jpeg", buffer2) ||
         !t2.loadFromMemory(buffer2.data(), buffer2.size()))
     {
         std::cerr << "Error loading background.jpeg" << std::endl;
         return -1;
     }
-    if (!loadFromFileToMemory("D:/Projects/TETRIS/Debug/images/frame.png", buffer3) ||
+    if (!loadFromFileToMemory("../images/frame.png", buffer3) ||
         !t3.loadFromMemory(buffer3.data(), buffer3.size()))
     {
         std::cerr << "Error loading frame.png" << std::endl;
@@ -109,7 +109,7 @@ int main()
 
     sf::Font font;
     std::vector<char> fontBuffer;
-    if (!loadFromFileToMemory("D:/Projects/TETRIS/Debug/Fonts/Roboto-Black.ttf", fontBuffer))
+    if (!loadFromFileToMemory("../Fonts/Roboto-Black.ttf", fontBuffer))
     {
         std::cerr << "Failed to load font file into memory." << std::endl;
         return -1;
